@@ -1,0 +1,11 @@
+#!/bin/bash --login
+
+echo $NAME
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+
+rm ${NAME}.tmp.bam
+rm ${NAME}.bam
+samtools view -b -F 4 -@ 4 -o ${NAME}.tmp.bam ${NAME}.sam.addtag
+samtools reheader ${NAME}.sam.addtag.header ${NAME}.tmp.bam > ${NAME}.bam
+
+scontrol show job $SLURM_JOB_ID

@@ -1,0 +1,4 @@
+#!/bin/bash --login
+export PATH="/mnt/home/zhangf37/miniconda2/bin:$PATH"
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/09.haplotypecaller_ploidy2
+python extract_readcount.py

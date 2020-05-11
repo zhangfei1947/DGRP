@@ -1,0 +1,8 @@
+#!/bin/bash --login
+
+echo $NAME
+
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/05.markdup
+samtools index -@ 2 $NAME
+
+scontrol show job $SLURM_JOB_ID

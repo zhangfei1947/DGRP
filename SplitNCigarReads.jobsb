@@ -1,0 +1,11 @@
+#!/bin/bash --login
+
+echo $NAME
+
+dir=/mnt/scratch/zhangf37/PROJECT/20190813_DGRP
+/mnt/research/qgg/software/gatk-4.1.1.0/gatk SplitNCigarReads \
+  -R /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/dmel-all-chromosome-r6.28.fasta \
+  -I $dir/05.markdup/${NAME}.marked_duplicates.bam \
+  -O $dir/06.splitncigarreads/${NAME}.SNCR.bam
+
+scontrol show job $SLURM_JOB_ID

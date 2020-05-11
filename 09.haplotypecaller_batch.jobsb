@@ -1,0 +1,16 @@
+#!/bin/bash --login
+
+echo $LOC
+echo $ii
+dir=/mnt/scratch/zhangf37/PROJECT/20190813_DGRP
+cd ${dir}/06.recalibration
+input=`ls *recal.bam|awk '{ORS=" ";print"-I "$0}'`
+
+gatk --java-options "-Xmx6g" HaplotypeCaller  \
+   -R /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/dmel-all-chromosome-r6.28.fasta \
+   $input \
+   -O ${dir}/09.haplotypecaller_ploidy2/out_${ii}.vcf.gz \
+   --sample-ploidy 2 \
+   -L $LOC
+
+scontrol show job $SLURM_JOB_ID

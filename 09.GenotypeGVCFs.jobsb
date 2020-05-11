@@ -1,0 +1,14 @@
+#!/bin/bash --login
+
+echo $NAME
+dir=/mnt/scratch/zhangf37/PROJECT/20190813_DGRP
+cd $dir/09.GenotypeGVCFs
+
+ gatk --java-options "-Xmx8g" GenotypeGVCFs \
+   -R /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/dmel-all-chromosome-r6.28.fasta \
+   -V gendb://$dir/08.GenomicsDBImport/${NAME} \
+   -O ${NAME}.vcf.gz \
+   --sample-ploidy 1 \
+   --heterozygosity 0.0001
+
+scontrol show job $SLURM_JOB_ID

@@ -1,0 +1,35 @@
+#!/bin/bash --login
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 153.slx.f1.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/153.slx.f1.fastq.gz
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 237.slx.f1.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/237.slx.f1.fastq.gz
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 28.slx.f1.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/28.slx.f1.fastq.gz
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 307.slx.f22.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/307.slx.f22.fastq.gz
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 313.slx.f1.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/313.slx.f1.fastq.gz
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 325.slx.f1.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/325.slx.f1.fastq.gz
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 335.slx.fo2.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/335.slx.fo2.fastq.gz
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 358.slx.f1.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/358.slx.f1.fastq.gz
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 360.slx.f22.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/360.slx.f22.fastq.gz
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 362.slx.f12.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/362.slx.f12.fastq.gz
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 365.slx.f1.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/365.slx.f1.fastq.gz
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 379.slx.f1.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/379.slx.f1.fastq.gz
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 380.slx.f1.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/380.slx.f1.fastq.gz
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 386.slx.f1.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/386.slx.f1.fastq.gz
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 41.slx.f1.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/41.slx.f1.fastq.gz
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 730.slx.f1.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/730.slx.f1.fastq.gz
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+bwa mem -t 6 -o 852.slx.f1.singleton.sam /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/Dmel_r6.28 /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc/852.slx.f1.fastq.gz

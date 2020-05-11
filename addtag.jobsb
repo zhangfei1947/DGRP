@@ -1,0 +1,6 @@
+#!/bin/bash --login
+
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/03.bwa_mapping
+python /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/00.scripts/addtag.py $SAM
+
+scontrol show job $SLURM_JOB_ID

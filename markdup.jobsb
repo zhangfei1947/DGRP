@@ -1,0 +1,11 @@
+#!/bin/bash --login
+
+echo $NAME
+
+dir=/mnt/scratch/zhangf37/PROJECT/20190813_DGRP
+java -jar /mnt/research/qgg/software/picard-2.13.2/picard.jar MarkDuplicates \
+  I=$dir/04.sam2bam/${NAME}.sorted.bam \
+  O=$dir/05.markdup/${NAME}.marked_duplicates.bam \
+  M=$dir/05.markdup/${NAME}.marked_dup_metrics.txt
+
+scontrol show job $SLURM_JOB_ID

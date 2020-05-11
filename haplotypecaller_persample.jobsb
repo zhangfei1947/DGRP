@@ -1,0 +1,12 @@
+#!/bin/bash --login
+
+echo $NAME
+dir=/mnt/scratch/zhangf37/PROJECT/20190813_DGRP
+
+gatk --java-options "-Xmx16g" HaplotypeCaller  \
+   -R /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/dmel-all-chromosome-r6.28.fasta \
+   -I ${dir}/06.recalibration/${NAME}.recal.bam \
+   -O ${dir}/07.haplotypecaller/${NAME}.g.vcf.gz \
+   -ERC GVCF
+
+scontrol show job $SLURM_JOB_ID

@@ -1,0 +1,16 @@
+#!/bin/bash --login
+
+echo $LOC
+echo $ii
+dir=/mnt/scratch/zhangf37/PROJECT/20190813_DGRP
+cd $dir/08.GenomicsDBImport
+
+gatk --java-options "-Xmx8g -Xms8g" GenomicsDBImport \
+       --genomicsdb-workspace-path my_database_${ii} \
+       --batch-size 50 \
+       -L $LOC \
+       --sample-name-map $dir/08.GenomicsDBImport/sample_map \
+       --reader-threads 5
+
+
+scontrol show job $SLURM_JOB_ID

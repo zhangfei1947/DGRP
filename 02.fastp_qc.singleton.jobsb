@@ -1,0 +1,35 @@
+#!/bin/bash --login
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/153.slx.f1.fastq -o 153.slx.f1.fastq.gz -q 20 --cut_tail 20 -n 5 -h 153.slx.f1.singleton.html -j 153.slx.f1.singleton.json -w 4
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/237.slx.f1.fastq -o 237.slx.f1.fastq.gz -q 20 --cut_tail 20 -n 5 -h 237.slx.f1.singleton.html -j 237.slx.f1.singleton.json -w 4
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/28.slx.f1.fastq -o 28.slx.f1.fastq.gz -q 20 --cut_tail 20 -n 5 -h 28.slx.f1.singleton.html -j 28.slx.f1.singleton.json -w 4
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/307.slx.f22.fastq -o 307.slx.f22.fastq.gz -q 20 --cut_tail 20 -n 5 -h 307.slx.f22.singleton.html -j 307.slx.f22.singleton.json -w 4
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/313.slx.f1.fastq -o 313.slx.f1.fastq.gz -q 20 --cut_tail 20 -n 5 -h 313.slx.f1.singleton.html -j 313.slx.f1.singleton.json -w 4
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/325.slx.f1.fastq -o 325.slx.f1.fastq.gz -q 20 --cut_tail 20 -n 5 -h 325.slx.f1.singleton.html -j 325.slx.f1.singleton.json -w 4
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/335.slx.fo2.fastq -o 335.slx.fo2.fastq.gz -q 20 --cut_tail 20 -n 5 -h 335.slx.fo2.singleton.html -j 335.slx.fo2.singleton.json -w 4
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/358.slx.f1.fastq -o 358.slx.f1.fastq.gz -q 20 --cut_tail 20 -n 5 -h 358.slx.f1.singleton.html -j 358.slx.f1.singleton.json -w 4
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/360.slx.f22.fastq -o 360.slx.f22.fastq.gz -q 20 --cut_tail 20 -n 5 -h 360.slx.f22.singleton.html -j 360.slx.f22.singleton.json -w 4
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/362.slx.f12.fastq -o 362.slx.f12.fastq.gz -q 20 --cut_tail 20 -n 5 -h 362.slx.f12.singleton.html -j 362.slx.f12.singleton.json -w 4
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/365.slx.f1.fastq -o 365.slx.f1.fastq.gz -q 20 --cut_tail 20 -n 5 -h 365.slx.f1.singleton.html -j 365.slx.f1.singleton.json -w 4
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/379.slx.f1.fastq -o 379.slx.f1.fastq.gz -q 20 --cut_tail 20 -n 5 -h 379.slx.f1.singleton.html -j 379.slx.f1.singleton.json -w 4
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/380.slx.f1.fastq -o 380.slx.f1.fastq.gz -q 20 --cut_tail 20 -n 5 -h 380.slx.f1.singleton.html -j 380.slx.f1.singleton.json -w 4
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/386.slx.f1.fastq -o 386.slx.f1.fastq.gz -q 20 --cut_tail 20 -n 5 -h 386.slx.f1.singleton.html -j 386.slx.f1.singleton.json -w 4
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/41.slx.f1.fastq -o 41.slx.f1.fastq.gz -q 20 --cut_tail 20 -n 5 -h 41.slx.f1.singleton.html -j 41.slx.f1.singleton.json -w 4
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/730.slx.f1.fastq -o 730.slx.f1.fastq.gz -q 20 --cut_tail 20 -n 5 -h 730.slx.f1.singleton.html -j 730.slx.f1.singleton.json -w 4
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/02.fastp_qc
+fastp -i /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/01.bam2fastq/852.slx.f1.fastq -o 852.slx.f1.fastq.gz -q 20 --cut_tail 20 -n 5 -h 852.slx.f1.singleton.html -j 852.slx.f1.singleton.json -w 4

@@ -1,0 +1,32 @@
+#!/bin/bash --login
+
+echo $NAME
+dir=/mnt/scratch/zhangf37/PROJECT/20190813_DGRP
+
+/mnt/research/qgg/software/gatk-4.1.1.0/gatk BaseRecalibrator \
+   -I $dir/05.markdup/${NAME}.marked_duplicates.bam \
+   -R /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/dmel-all-chromosome-r6.28.fasta \
+   --known-sites /mnt/home/zhangf37/PROJECT/20190813_DGRP/dgrp.r6.col9.vcf \
+   -O $dir/06.recalibration/${NAME}.recal_data.1.table
+
+
+[[ $? -eq 0 ]] && /mnt/research/qgg/software/gatk-4.1.1.0/gatk ApplyBQSR \
+   -R /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/dmel-all-chromosome-r6.28.fasta \
+   -I  $dir/05.markdup/${NAME}.marked_duplicates.bam \
+   --bqsr-recal-file $dir/06.recalibration/${NAME}.recal_data.1.table \
+   -O $dir/06.recalibration/${NAME}.recal.bam
+
+
+[[ $? -eq 0 ]] && /mnt/research/qgg/software/gatk-4.1.1.0/gatk BaseRecalibrator \
+   -I $dir/06.recalibration/${NAME}.recal.bam \
+   -R /mnt/home/zhangf37/Genomic/Drosophila_melanogaster/dmel_r6.28_FB2019_03/dmel-all-chromosome-r6.28.fasta \
+   --known-sites /mnt/home/zhangf37/PROJECT/20190813_DGRP/dgrp.r6.col9.vcf \
+   -O $dir/06.recalibration/${NAME}.recal_data.2.table
+
+
+[[ $? -eq 0 ]] && /mnt/research/qgg/software/gatk-4.1.1.0/gatk AnalyzeCovariates \
+     -before $dir/06.recalibration/${NAME}.recal_data.1.table \
+     -after $dir/06.recalibration/${NAME}.recal_data.2.table \
+     -plots $dir/06.recalibration/${NAME}.AnalyzeCovariates.pdf
+
+scontrol show job $SLURM_JOB_ID

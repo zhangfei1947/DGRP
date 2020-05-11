@@ -1,0 +1,8 @@
+#!/bin/bash --login
+
+echo $NAME
+
+cd /mnt/scratch/zhangf37/PROJECT/20190813_DGRP/04.sam2bam
+samtools sort -@ 4 -O BAM -o ${NAME}.sorted.bam ${NAME}.bam
+
+scontrol show job $SLURM_JOB_ID
